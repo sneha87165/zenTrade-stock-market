@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "./axiosInstance";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logoTradex.svg";
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -79,9 +80,9 @@ const Login = () => {
                       {/* Logo & Heading */}
                       <div className="d-flex align-items-center mb-3 pb-1">
                         <img
-                          src="/media/images/logoTradex.svg"
+                          src={logo}
                           style={{ width: "42px", height: "42px", marginRight: "12px" }}
-                          alt="ZenTrade"
+                          alt="ZenTrade Logo"
                         />
                         <span className="h2 fw-bold mb-0" style={{ color: "#1D4ED8" }}>
                           ZENTRADE

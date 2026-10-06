@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/logoTradex.svg";
 
 function Navbar() {
   const [user, setUser] = useState(null);
@@ -40,7 +41,7 @@ function Navbar() {
         {/* Brand logo and text */}
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <img
-            src="/media/images/logoTradex.svg"
+            src={logo}
             alt="ZenTrade Logo"
             style={{ width: "36px", height: "36px", marginRight: "10px" }}
           />

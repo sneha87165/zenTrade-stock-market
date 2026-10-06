@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logoTradex.svg';
 
 function Footer() {
     return ( 
@@ -6,7 +7,7 @@ function Footer() {
             <div className="row mt-5 text-center text-md-start">
                 <div className="col-md-3 mb-4">
                     <div className="d-flex align-items-center mb-3">
-                        <img src="/media/images/logoTradex.svg" style={{ width: "36px", height: "36px", marginRight: "10px" }} alt="ZenTrade Logo" />
+                        <img src={logo} style={{ width: "36px", height: "36px", marginRight: "10px" }} alt="ZenTrade Logo" />
                         <span className="fw-bold fs-4" style={{ color: "#1D4ED8" }}>ZENTRADE</span>
                     </div>
                     <p>&copy; 2010 - 2026, ZenTrade Broking Ltd. All rights reserved.</p>
