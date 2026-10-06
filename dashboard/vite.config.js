@@ -6,15 +6,17 @@ export default defineConfig({
   base: "./",
   plugins: [react()],
   server: {
-    port: process.env.PORT || 5174,
+    port: 5174,
+    strictPort: true,
     host: "0.0.0.0",
   },
   preview: {
-    port: process.env.PORT || 5174,
+    port: 5174,
+    strictPort: true,
     host: "0.0.0.0",
   },
   optimizeDeps: {
-    include: ["@mui/icons-material"], // Force include MUI icons
+    include: ["@mui/icons-material"],
   },
   build: {
     commonjsOptions: {
