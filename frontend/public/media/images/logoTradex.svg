@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="topWing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="rightWing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D09C"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="bottomWing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="accentWing" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#1E3A8A" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  
+  <g filter="url(#softShadow)">
+    <!-- Top-Right Dynamic Kite Wing -->
+    <polygon points="60,12 104,56 60,74 60,38" fill="url(#topWing)" />
+    <!-- Bottom-Right Ascending Blade -->
+    <polygon points="60,74 104,56 74,106 60,74" fill="url(#rightWing)" />
+    <!-- Left Lower Anchor Wing -->
+    <polygon points="60,74 74,106 16,64 42,50" fill="url(#bottomWing)" />
+    <!-- Top-Left Chevron Wing -->
+    <polygon points="60,12 60,38 42,50 16,64" fill="url(#accentWing)" />
+  </g>
+</svg>
